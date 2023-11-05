@@ -1,0 +1,2 @@
+track_bar
+-DCATKIN_DEVEL_PREFIX=/home/rp/DYH/lidar2camera_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rp/DYH/lidar2camera_ws/install -G Unix Makefiles

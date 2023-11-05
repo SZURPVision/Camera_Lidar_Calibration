@@ -1,0 +1,5 @@
+<launch>    
+    <!-- <param name="/intrinsic_bar_val/r1_val" value="0" /> -->
+    <!-- <param name="/intrinsic_bar_val/r2_val" value="0" />
+    <node pkg="track_bar" type="change_intrinsic_node" name="BAR_GUI" output="screen" />
+</launch>

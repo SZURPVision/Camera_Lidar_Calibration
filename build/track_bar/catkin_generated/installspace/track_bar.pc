@@ -1,0 +1,8 @@
+prefix=/home/rp/DYH/lidar2camera_ws/install
+
+Name: track_bar
+Description: Description of track_bar
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
