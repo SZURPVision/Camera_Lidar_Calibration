@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "track_bar")
 set(track_bar_VERSION "0.0.0")
-set(track_bar_MAINTAINER "rp <rp@todo.todo>")
+set(track_bar_MAINTAINER "BroAlanTaps <2022110013@email.szu.edu.cn>")
 set(track_bar_PACKAGE_FORMAT "2")
 set(track_bar_BUILD_DEPENDS "roscpp" "rospy")
 set(track_bar_BUILD_EXPORT_DEPENDS "roscpp" "rospy")

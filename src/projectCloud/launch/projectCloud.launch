@@ -1,0 +1,3 @@
+<launch>    
+    <node pkg="projectCloud" type="projectCloud" name="projectCloud" output="screen" />
+</launch>

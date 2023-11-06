@@ -6,7 +6,7 @@
                 "${workspaceFolder}/**",
                 "/opt/ros/noetic/include/**",
                 "/usr/local/include/**",
-                "/usr/include/**"
+                "${workspaceFolder}/src/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",

@@ -55,18 +55,18 @@ public:
     inline void create_bar()
     {
         std::cout<<"yes";
-        createTrackbar("r1_val","bar",&r1_val,1000,&bar::on_callback,this);
-        createTrackbar("r2_val","bar",&r2_val,1000,&bar::on_callback,this);
-        createTrackbar("r3_val","bar",&r3_val,1000,&bar::on_callback,this);
-        createTrackbar("r4_val","bar",&r4_val,1000,&bar::on_callback,this);
-        createTrackbar("r5_val","bar",&r5_val,1000,&bar::on_callback,this);
-        createTrackbar("r6_val","bar",&r6_val,1000,&bar::on_callback,this);
-        createTrackbar("r7_val","bar",&r7_val,1000,&bar::on_callback,this);
-        createTrackbar("r8_val","bar",&r8_val,1000,&bar::on_callback,this);
-        createTrackbar("r9_val","bar",&r9_val,1000,&bar::on_callback,this);
-        createTrackbar("t1_val","bar",&t1_val,1000,&bar::on_callback,this);
-        createTrackbar("t2_val","bar",&t2_val,1000,&bar::on_callback,this);
-        createTrackbar("t3_val","bar",&t3_val,1000,&bar::on_callback,this);
+        createTrackbar("r1_val","bar",&r1_val,2000,&bar::on_callback,this);
+        createTrackbar("r2_val","bar",&r2_val,2000,&bar::on_callback,this);
+        createTrackbar("r3_val","bar",&r3_val,2000,&bar::on_callback,this);
+        createTrackbar("r4_val","bar",&r4_val,2000,&bar::on_callback,this);
+        createTrackbar("r5_val","bar",&r5_val,2000,&bar::on_callback,this);
+        createTrackbar("r6_val","bar",&r6_val,2000,&bar::on_callback,this);
+        createTrackbar("r7_val","bar",&r7_val,2000,&bar::on_callback,this);
+        createTrackbar("r8_val","bar",&r8_val,2000,&bar::on_callback,this);
+        createTrackbar("r9_val","bar",&r9_val,2000,&bar::on_callback,this);
+        createTrackbar("t1_val","bar",&t1_val,2000,&bar::on_callback,this);
+        createTrackbar("t2_val","bar",&t2_val,2000,&bar::on_callback,this);
+        createTrackbar("t3_val","bar",&t3_val,2000,&bar::on_callback,this);
     }
 private:
     int r1_val, r2_val, r3_val, r4_val, r5_val, r6_val, r7_val, r8_val,r9_val;
@@ -78,18 +78,18 @@ private:
     {
         bar* self = static_cast<bar*>(userdata);
         // self->on_callback(value);
-        self->r1_real_val = self->r1_val / 1000.0 * 1.0;
-        self->r2_real_val = self->r2_val / 1000.0 * 1.0;
-        self->r3_real_val = self->r3_val / 1000.0 * 1.0;
-        self->r4_real_val = self->r4_val / 1000.0 * 1.0;
-        self->r5_real_val = self->r5_val / 1000.0 * 1.0;
-        self->r6_real_val = self->r6_val / 1000.0 * 1.0;
-        self->r7_real_val = self->r7_val / 1000.0 * 1.0;
-        self->r8_real_val = self->r8_val / 1000.0 * 1.0;
-        self->r9_real_val = self->r9_val / 1000.0 * 1.0;
-        self->t1_real_val = self->t1_val / 1000.0 * 1.0;
-        self->t2_real_val = self->t2_val / 1000.0 * 1.0;
-        self->t3_real_val = self->t3_val / 1000.0 * 1.0;
+        self->r1_real_val = self->r1_val / 1000.0 * 1.0 - 1;
+        self->r2_real_val = self->r2_val / 1000.0 * 1.0 - 1;
+        self->r3_real_val = self->r3_val / 1000.0 * 1.0 - 1;
+        self->r4_real_val = self->r4_val / 1000.0 * 1.0 - 1;
+        self->r5_real_val = self->r5_val / 1000.0 * 1.0 - 1;
+        self->r6_real_val = self->r6_val / 1000.0 * 1.0 - 1;
+        self->r7_real_val = self->r7_val / 1000.0 * 1.0 - 1;
+        self->r8_real_val = self->r8_val / 1000.0 * 1.0 - 1;
+        self->r9_real_val = self->r9_val / 1000.0 * 1.0 - 1;
+        self->t1_real_val = self->t1_val / 1000.0 * 1.0 - 1;
+        self->t2_real_val = self->t2_val / 1000.0 * 1.0 - 1;
+        self->t3_real_val = self->t3_val / 1000.0 * 1.0 - 1;
         std::cout<<"R:"<<std::endl<<self->r1_real_val <<" "<<self->r2_real_val<<" "<<self->r3_real_val<<std::endl<<
         self->r4_real_val<<" "<<self->r5_real_val<<" "<<self->r6_real_val<<std::endl<<
         self->r7_real_val<<" "<<self->r8_real_val<<" "<<self->r9_real_val<<std::endl<<"T:"<<std::endl<<

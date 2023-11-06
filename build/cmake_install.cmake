@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/rp/DYH/lidar2camera_ws/build/gtest/cmake_install.cmake")
+  include("/home/rp/DYH/lidar2camera_ws/build/projectCloud/cmake_install.cmake")
   include("/home/rp/DYH/lidar2camera_ws/build/track_bar/cmake_install.cmake")
 
 endif()
