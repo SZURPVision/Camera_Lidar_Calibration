@@ -105,6 +105,7 @@ change_intrinsic_node_EXTERNAL_OBJECTS =
 /home/rp/DYH/lidar2camera_ws/devel/lib/track_bar/change_intrinsic_node: /usr/local/lib/libopencv_cudafeatures2d.so.4.8.0
 /home/rp/DYH/lidar2camera_ws/devel/lib/track_bar/change_intrinsic_node: /usr/local/lib/libopencv_cudaobjdetect.so.4.8.0
 /home/rp/DYH/lidar2camera_ws/devel/lib/track_bar/change_intrinsic_node: /usr/local/lib/libopencv_cudastereo.so.4.8.0
+/home/rp/DYH/lidar2camera_ws/devel/lib/track_bar/change_intrinsic_node: /usr/local/lib/libopencv_cvv.so.4.8.0
 /home/rp/DYH/lidar2camera_ws/devel/lib/track_bar/change_intrinsic_node: /usr/local/lib/libopencv_dnn_objdetect.so.4.8.0
 /home/rp/DYH/lidar2camera_ws/devel/lib/track_bar/change_intrinsic_node: /usr/local/lib/libopencv_dnn_superres.so.4.8.0
 /home/rp/DYH/lidar2camera_ws/devel/lib/track_bar/change_intrinsic_node: /usr/local/lib/libopencv_dpm.so.4.8.0
@@ -122,6 +123,7 @@ change_intrinsic_node_EXTERNAL_OBJECTS =
 /home/rp/DYH/lidar2camera_ws/devel/lib/track_bar/change_intrinsic_node: /usr/local/lib/libopencv_reg.so.4.8.0
 /home/rp/DYH/lidar2camera_ws/devel/lib/track_bar/change_intrinsic_node: /usr/local/lib/libopencv_rgbd.so.4.8.0
 /home/rp/DYH/lidar2camera_ws/devel/lib/track_bar/change_intrinsic_node: /usr/local/lib/libopencv_saliency.so.4.8.0
+/home/rp/DYH/lidar2camera_ws/devel/lib/track_bar/change_intrinsic_node: /usr/local/lib/libopencv_sfm.so.4.8.0
 /home/rp/DYH/lidar2camera_ws/devel/lib/track_bar/change_intrinsic_node: /usr/local/lib/libopencv_stereo.so.4.8.0
 /home/rp/DYH/lidar2camera_ws/devel/lib/track_bar/change_intrinsic_node: /usr/local/lib/libopencv_structured_light.so.4.8.0
 /home/rp/DYH/lidar2camera_ws/devel/lib/track_bar/change_intrinsic_node: /usr/local/lib/libopencv_superres.so.4.8.0

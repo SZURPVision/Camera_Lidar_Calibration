@@ -19,7 +19,7 @@
 float max_depth = 60;
 float min_depth = 1;
 vector<livox_ros_driver::CustomMsg> lidar_datas; 
-int threshold_lidar = 200000;  // number of cloud point on the photo
+int threshold_lidar = 500000;  // number of cloud point on the photo
 string input_bag_path, input_photo_path, output_path, intrinsic_path, extrinsic_path;
 
 
@@ -157,6 +157,19 @@ int main(int argc, char **argv)
         float x, y, z;
         float theoryUV[2] = {0, 0};
         int myCount = 0;
+        cv::Mat K = cv::Mat::eye(3, 3, CV_32FC1); //内参矩阵
+        K.at<float>(0, 0) = 4161.1191;
+        K.at<float>(1, 1) = 4183.0083;
+        K.at<float>(0, 2) = 882.8221;
+        K.at<float>(1, 2) = 552.3232;
+        cv::Mat distort_coeffs = cv::Mat::zeros(1, 5, CV_32FC1); //畸变系数矩阵 顺序是[k1, k2, p1, p2, k3]
+        distort_coeffs.at<float>(0, 0) =  -0.194475;
+        distort_coeffs.at<float>(0, 1) = 0.798209;
+        distort_coeffs.at<float>(0, 2) = 0.002118;
+        distort_coeffs.at<float>(0, 3) = -0.004708;
+        int rows = img.rows, cols = img.cols;
+        cv::Mat image_undistort2 = cv::Mat(rows, cols, CV_8UC3);  // 方法2 OpenCV去畸变以后的图
+        cv::undistort(img, image_undistort2, K, distort_coeffs); //去畸变
         for(unsigned int i = 0; i < lidar_datas.size(); ++i)
         {
             for(unsigned int j = 0; j < lidar_datas[i].point_num; ++j)
@@ -190,12 +203,12 @@ int main(int argc, char **argv)
         }
         for(int i = 0;i < points_to_draw.size();i++)
         {
-             cv::circle(img, points_to_draw[i], 2, scala[i], -1);
+             cv::circle(image_undistort2, points_to_draw[i], 2, scala[i], -1);
         }
 
 
         // 在渲染所有点后显示图像
-        cv::imshow("img", img);
+        cv::imshow("img", image_undistort2);
         cv::waitKey(10);
         // std::cout<< camera2LidarMatrix<<"--------------"<<std::endl;
     }

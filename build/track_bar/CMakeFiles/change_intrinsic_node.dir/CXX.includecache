@@ -21,6 +21,8 @@ opencv4/opencv2/core/core.hpp
 /home/rp/DYH/lidar2camera_ws/src/track_bar/include/track_bar/opencv4/opencv2/core/core.hpp
 ros/ros.h
 /home/rp/DYH/lidar2camera_ws/src/track_bar/include/track_bar/ros/ros.h
+Eigen/Dense
+/home/rp/DYH/lidar2camera_ws/src/track_bar/include/track_bar/Eigen/Dense
 
 /home/rp/DYH/lidar2camera_ws/src/track_bar/src/bar.cpp
 iostream

@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/rp/DYH/lidar2camera_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_ebfd8/fast && /usr/bin/make -f CMakeFiles/cmTC_ebfd8.dir/build.make CMakeFiles/cmTC_ebfd8.dir/build
+Run Build Command(s):/usr/bin/make cmTC_aa46c/fast && /usr/bin/make -f CMakeFiles/cmTC_aa46c.dir/build.make CMakeFiles/cmTC_aa46c.dir/build
 make[1]: Entering directory '/home/rp/DYH/lidar2camera_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ebfd8.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ebfd8.dir/src.c.o   -c /home/rp/DYH/lidar2camera_ws/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_ebfd8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebfd8.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_ebfd8.dir/src.c.o  -o cmTC_ebfd8 
-/usr/bin/ld: CMakeFiles/cmTC_ebfd8.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_aa46c.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_aa46c.dir/src.c.o   -c /home/rp/DYH/lidar2camera_ws/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_aa46c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa46c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_aa46c.dir/src.c.o  -o cmTC_aa46c 
+/usr/bin/ld: CMakeFiles/cmTC_aa46c.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_ebfd8.dir/build.make:87: cmTC_ebfd8] Error 1
+make[1]: *** [CMakeFiles/cmTC_aa46c.dir/build.make:87: cmTC_aa46c] Error 1
 make[1]: Leaving directory '/home/rp/DYH/lidar2camera_ws/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_ebfd8/fast] Error 2
+make: *** [Makefile:121: cmTC_aa46c/fast] Error 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/rp/DYH/lidar2camera_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d353f/fast && /usr/bin/make -f CMakeFiles/cmTC_d353f.dir/build.make CMakeFiles/cmTC_d353f.dir/build
+Run Build Command(s):/usr/bin/make cmTC_40c18/fast && /usr/bin/make -f CMakeFiles/cmTC_40c18.dir/build.make CMakeFiles/cmTC_40c18.dir/build
 make[1]: Entering directory '/home/rp/DYH/lidar2camera_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d353f.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d353f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_d353f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d353f.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_d353f.dir/CheckFunctionExists.c.o  -o cmTC_d353f  -lpthreads 
+Building C object CMakeFiles/cmTC_40c18.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_40c18.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_40c18
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40c18.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_40c18.dir/CheckFunctionExists.c.o  -o cmTC_40c18  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_d353f.dir/build.make:87: cmTC_d353f] Error 1
+make[1]: *** [CMakeFiles/cmTC_40c18.dir/build.make:87: cmTC_40c18] Error 1
 make[1]: Leaving directory '/home/rp/DYH/lidar2camera_ws/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_d353f/fast] Error 2
+make: *** [Makefile:121: cmTC_40c18/fast] Error 2
 
 
 
