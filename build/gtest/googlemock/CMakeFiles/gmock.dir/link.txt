@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -std=c++14  -shared -Wl,-soname,libgmock.so -o ../lib/libgmock.so CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/home/rp/DYH/lidar2camera_ws/build/gtest/lib ../lib/libgtest.so -lpthread 

@@ -1,8 +1,0 @@
-prefix=/home/rp/DYH/lidar2camera_ws/install
-
-Name: projectCloud
-Description: Description of projectCloud
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
