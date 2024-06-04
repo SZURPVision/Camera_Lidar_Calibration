@@ -8,8 +8,9 @@ It's hard to choose accurate pointcloud from pcd files. I reckon that manual adj
 
 需要保存一个点云PCD文件和对应的图片，在projectCloud.cpp文件中填入相机内参和畸变系数
 
-本代码写于2023年11月，本人也忘记怎么跑了，只是提供一个思路。
+本代码写于2023年11月，年久失修，本人也忘记怎么跑了，只是提供一个思路。
 
-标定效果图：
+标定效果图：  
+
 ![效果](https://github.com/SZURPVision/Camera_Lidar_Calibration/assets/89376165/66776d88-37af-4809-bf3e-f99519c9b5cd)
 
