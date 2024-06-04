@@ -6,6 +6,8 @@ It's hard to choose accurate pointcloud from pcd files. I reckon that manual adj
 
 网上开源的各种标定工具普遍有流程繁琐，无标定物标定效果差的问题，经过一个多月的尝试，最终选定用开源工具进行粗标定，然后使用手动调整变换矩阵使得点云与图片对齐的方法
 
+粗标定可以使用：https://github.com/koide3/direct_visual_lidar_calibration
+
 需要保存一个点云PCD文件和对应的图片，在projectCloud.cpp文件中填入相机内参和畸变系数
 
 本代码写于2023年11月，年久失修，本人也忘记怎么跑了，只是提供一个思路。
